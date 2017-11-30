@@ -67,6 +67,19 @@
     return res;
 }
 
+#pragma mark - 传递一个值的block
+- (void)performSelectorWithTheBlock:(void(^)(int value))block {
+    // 获取block
+    NSMethodSignature *signature = aspect_blockMethodSignature(block,NULL);
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+    [invocation setTarget:block];
+    // 此处待考虑
+    int a=2;
+    [invocation setArgument:&a atIndex:1];
+    [invocation invoke];
+}
+
+
 - (void)setInv:(NSInvocation *)inv andArgs:(NSArray *)args argsCount:(NSUInteger)count{
     for (int i = 0; i<count; i++) {
         NSObject*obj = args[i];
