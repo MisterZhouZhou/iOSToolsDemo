@@ -1,0 +1,5 @@
+1、可以看到除了 OSSpinLock 外，dispatch_semaphore 和 pthread_mutex 性能是最高的。
+有消息称，苹果在新系统中已经优化了 pthread_mutex 的性能，所以它看上去和 OSSpinLock 差距并没有那么大了。
+
+2、OSSpinLock 和 dispatch_semaphore 都不会产生特别明显的死锁，所以我也无法确定用 dispatch_semaphore 代替 OSSpinLock 是否正确。
+能够肯定的是，用 pthread_mutex 是安全的。
