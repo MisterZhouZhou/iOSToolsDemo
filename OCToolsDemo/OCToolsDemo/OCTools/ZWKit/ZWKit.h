@@ -21,5 +21,8 @@ FOUNDATION_EXPORT const unsigned char ZWKitVersionString[];
 #import "NSObject+ZWAdd.h"
 #import "NSObject+ZWAddForARC.h"
 #import "NSObject+ZWAddForKVO.h"
+#import "NSString+ZWAdd.h"
+#import "NSData+ZWAdd.h"
+
 
 #endif

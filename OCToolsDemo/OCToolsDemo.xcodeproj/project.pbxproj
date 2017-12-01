@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F43E6EE1FCFE87C00C6F221 /* NSString+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F43E6ED1FCFE87C00C6F221 /* NSString+ZWAdd.m */; };
+		5F43E6F11FCFE98F00C6F221 /* NSData+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F43E6F01FCFE98F00C6F221 /* NSData+ZWAdd.m */; };
+		5F43E6F41FD00B3C00C6F221 /* NSNumber+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F43E6F31FD00B3C00C6F221 /* NSNumber+ZWAdd.m */; };
 		5F4D120F1FCFB1B700B39529 /* NSObject+ZWAddForARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D120E1FCFB1B700B39529 /* NSObject+ZWAddForARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5F4D12121FCFB30400B39529 /* NSObject+ZWAddForKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D12111FCFB30400B39529 /* NSObject+ZWAddForKVO.m */; };
 		5F71B64D1FCFCB4E00954698 /* NSObject+performSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F71B64C1FCFCB4E00954698 /* NSObject+performSelector.m */; };
@@ -23,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F43E6EC1FCFE87C00C6F221 /* NSString+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZWAdd.h"; sourceTree = "<group>"; };
+		5F43E6ED1FCFE87C00C6F221 /* NSString+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZWAdd.m"; sourceTree = "<group>"; };
+		5F43E6EF1FCFE98F00C6F221 /* NSData+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ZWAdd.h"; sourceTree = "<group>"; };
+		5F43E6F01FCFE98F00C6F221 /* NSData+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZWAdd.m"; sourceTree = "<group>"; };
+		5F43E6F21FD00B3C00C6F221 /* NSNumber+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ZWAdd.h"; sourceTree = "<group>"; };
+		5F43E6F31FD00B3C00C6F221 /* NSNumber+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ZWAdd.m"; sourceTree = "<group>"; };
 		5F4D120D1FCFB1B700B39529 /* NSObject+ZWAddForARC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZWAddForARC.h"; sourceTree = "<group>"; };
 		5F4D120E1FCFB1B700B39529 /* NSObject+ZWAddForARC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZWAddForARC.m"; sourceTree = "<group>"; };
 		5F4D12101FCFB30400B39529 /* NSObject+ZWAddForKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZWAddForKVO.h"; sourceTree = "<group>"; };
@@ -91,6 +100,12 @@
 				5F4D120E1FCFB1B700B39529 /* NSObject+ZWAddForARC.m */,
 				5F4D12101FCFB30400B39529 /* NSObject+ZWAddForKVO.h */,
 				5F4D12111FCFB30400B39529 /* NSObject+ZWAddForKVO.m */,
+				5F43E6EC1FCFE87C00C6F221 /* NSString+ZWAdd.h */,
+				5F43E6ED1FCFE87C00C6F221 /* NSString+ZWAdd.m */,
+				5F43E6EF1FCFE98F00C6F221 /* NSData+ZWAdd.h */,
+				5F43E6F01FCFE98F00C6F221 /* NSData+ZWAdd.m */,
+				5F43E6F21FD00B3C00C6F221 /* NSNumber+ZWAdd.h */,
+				5F43E6F31FD00B3C00C6F221 /* NSNumber+ZWAdd.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -298,10 +313,13 @@
 				5FD4BF821FBD22880020072F /* ViewController.m in Sources */,
 				5FD4BF951FBD2CEF0020072F /* TextView.m in Sources */,
 				5F71B64D1FCFCB4E00954698 /* NSObject+performSelector.m in Sources */,
+				5F43E6EE1FCFE87C00C6F221 /* NSString+ZWAdd.m in Sources */,
 				5FD4BF8D1FBD22880020072F /* main.m in Sources */,
 				5FD4BF7F1FBD22880020072F /* AppDelegate.m in Sources */,
+				5F43E6F11FCFE98F00C6F221 /* NSData+ZWAdd.m in Sources */,
 				5F78C9921FCEB92400516913 /* NSObject+ZWAdd.m in Sources */,
 				5F4D12121FCFB30400B39529 /* NSObject+ZWAddForKVO.m in Sources */,
+				5F43E6F41FD00B3C00C6F221 /* NSNumber+ZWAdd.m in Sources */,
 				5FE752611FCD04A600F9B52E /* ThreadTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

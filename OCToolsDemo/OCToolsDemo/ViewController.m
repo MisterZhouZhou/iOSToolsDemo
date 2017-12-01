@@ -29,6 +29,28 @@ ZWSYNTH_DUMMY_CLASS(Person)
 @end
 @implementation ViewController (MethodAdd)
 
+- (void)testString1{
+     NSLog(@"%@",[@"hello  world!  " stringByTrim]);
+    
+    //    NSLog(@"%@",[@"<h1>hello</h1>" stringByEscapingHTML]);
+    
+    //    [NSData dataWithHexString:[[@"hello" dataUsingEncoding:NSUTF8StringEncoding] hexString]];
+    
+    //    NSLog(@"%@",[@"hello" dataUsingEncoding:NSUTF8StringEncoding]);
+    //
+    //    NSLog(@"%@",[[@"hello" dataUsingEncoding:NSUTF8StringEncoding] hexString]);
+
+}
+
+- (void)testPerformSelector{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 30, 30)];
+    view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:view];
+    //    [view performSelector:@selector(setBackgroundColor:) withTheObjects:@[[UIColor greenColor]]];
+    [view performSelectorWithTheArgs:@selector(setBackgroundColor:), [UIColor greenColor], [UIColor yellowColor]];
+
+}
+
 - (void)testAddObserverBlockForKeyPath{
     Person *person = [Person new];
     [person addObserverBlockForKeyPath:@"age" block:^(id  _Nonnull obj, id  _Nullable oldVal, id  _Nullable newVal) {
@@ -160,12 +182,15 @@ ZWSYNTH_DUMMY_CLASS(Person)
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 30, 30)];
-    view.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view];
-//    [view performSelector:@selector(setBackgroundColor:) withTheObjects:@[[UIColor greenColor]]];
-    [view performSelectorWithTheArgs:@selector(setBackgroundColor:), [UIColor greenColor], [UIColor yellowColor]];
-
+    
+    NSLog(@"%c", @"60".charValue);
+//    [@"  hello" isNotBlank];
+    
+//    CGFloat scale = [@"hello@22x.jpg" pathScale];
+//    NSLog(@"%.2f",scale);
+//   // hello@2x
+//   NSLog(@"%@",  [@"hello.jpg" stringByAppendingNameScale:2.0]);
+//   NSLog(@"%@",  [@"hello.jpg" stringByAppendingPathScale:2.0]);
 
 }
 
