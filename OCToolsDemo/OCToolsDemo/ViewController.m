@@ -11,7 +11,7 @@
 #import "NSObject+performSelector.h"
 #import "ZWKit.h"
 #import <objc/runtime.h>
-
+#import "UIImage+QRCode.h"
 
 
 ZWSYNTH_DUMMY_CLASS(Person)
@@ -28,6 +28,15 @@ ZWSYNTH_DUMMY_CLASS(Person)
 @interface ViewController (MethodAdd)
 @end
 @implementation ViewController (MethodAdd)
+
+- (void)qCode{
+    //    UIImage *img = [UIImage imageNamed:@"qcode.png"];
+    UIImage *img = [UIImage qrImageWithString:@"hello zw" size:CGSizeMake(100, 100) color:nil backGroundColor: nil];
+    //    UIImage *img = [UIImage generateBarCode:@"hello zw" size:CGSizeMake(100, 50) color:nil backGroundColor:nil];
+    [img readQRCodeWithMyQRCode:^(NSString *qrString, NSError *error) {
+        NSLog(@"%@",qrString);
+    }];
+}
 
 - (void)testString1{
      NSLog(@"%@",[@"hello  world!  " stringByTrim]);
@@ -182,18 +191,99 @@ ZWSYNTH_DUMMY_CLASS(Person)
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSLog(@"%c", @"60".charValue);
-//    [@"  hello" isNotBlank];
-    
-//    CGFloat scale = [@"hello@22x.jpg" pathScale];
-//    NSLog(@"%.2f",scale);
-//   // hello@2x
-//   NSLog(@"%@",  [@"hello.jpg" stringByAppendingNameScale:2.0]);
-//   NSLog(@"%@",  [@"hello.jpg" stringByAppendingPathScale:2.0]);
 
+   
+   
 }
 
+#pragma mark - sscanf 很强大
+- (void)sscanfTest{
+    // sscanf()是C语言中的函数
+    // sscanf()的作用：  从一个字符串中读取与指定格式相符的数据
+    // format 是格式控制字符串，它包含控制字符（如：%d,%i,%s等），空白字符（如：空格、制表符\t、回车换行符\n 或其连续组合）以及非空白字符，正则表达式等等；
+    // 例子：
+    
+    /***    类型输出    ***/
+    // 输出int类型
+    // int result = 0;
+    // sscanf([@"123321" UTF8String], "%d", &result);
+    // 123321
+    
+    // 输出NSInteger类型
+    //  NSInteger result = 0;
+    //  sscanf([@"123321" UTF8String], "%ld", &result);
+    // 123321
+    
+    // 输出char类型
+    // char buffer[256];
+    // sscanf([@"123321" UTF8String], "%s", buffer);
+    // "123321"
+    
+    
+    // 16进制数输出 u_int32_t
+    // uint32_t result = 0;
+    // sscanf([@"0x7f90d1d0bd60" UTF8String], "%x", &result);
+    // 3520118112
+    
+    /***    格式化输出    ***/
+    // 取指定长度的字符串
+    // char result[3];
+    // sscanf([@"123456" UTF8String], "%3s", result);
+    // 123
+    
+    // 正则1
+    // char result[256];
+    // sscanf([@"121212abcFFF344" UTF8String], "%[1-9a-z]", result);
+    // 121212abc
+    
+    // 正则2
+    // char result[256];
+    // sscanf([@"121212abcFFF344" UTF8String], "%[^A-Z]", result);
+    // 121212abc
+    
+    // 正则3  获取 / 和 @ 之间的字符串
+    // char result[256];
+    // sscanf([@"iios/12DDWDFF@122" UTF8String], "%*[^/]/%s", result);
+    // sscanf([@"iios/12DDWDFF@122" UTF8String], "%*[^/]/%[^@]", result);
+    // 12DDWDFF
+    
+    // 正则4  截取字符串
+    // char result[256];
+    // sscanf([@"hello zw" UTF8String], "%*s%s", result);
+    // %*s 表示第一个匹配到的%s被过滤掉
+    // 12DDWDFF
+    
+    
+    // 正则5
+    // int a,b,c = 0;
+    // sscanf([@"17:12:06" UTF8String], "%d:%d:%d", &a,&b,&c);
+    // a: 17, b: 12, c: 6
+    
+    // 正则6
+    char sztime1[16] = "", sztime2[16] = "";
+    sscanf("2006:03:18 - 2006:04:18", "%[0-9,:] - %[0-9,:]", sztime1, sztime2);
+    
+    printf("\n");
+}
+
+- (void)test1{
+     NSLog(@"%u", [UIColor redColor].rgbValue);
+}
+
+- (void)test{
+    //    NSString *xml = @"<Book><title>阿凡达</title><price>198.0</price></Book>";
+    //    NSDictionary *dict = [NSDictionary dictionaryWithXML:xml];
+    //    NSLog(@"%@",dict);
+    
+    //    NSLog(@"%c", @"60".charValue);
+    //    [@"  hello" isNotBlank];
+    
+    //    CGFloat scale = [@"hello@22x.jpg" pathScale];
+    //    NSLog(@"%.2f",scale);
+    //   // hello@2x
+    //   NSLog(@"%@",  [@"hello.jpg" stringByAppendingNameScale:2.0]);
+    //   NSLog(@"%@",  [@"hello.jpg" stringByAppendingPathScale:2.0]);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
