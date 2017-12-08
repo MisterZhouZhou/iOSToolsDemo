@@ -21,6 +21,10 @@
 		5FA443261FD535E30030F1AA /* NSArray+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA443251FD535E30030F1AA /* NSArray+ZWAdd.m */; };
 		5FA443291FD53BFC0030F1AA /* NSDictionary+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA443281FD53BFC0030F1AA /* NSDictionary+ZWAdd.m */; };
 		5FA4432C1FD553600030F1AA /* NSDate+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4432B1FD553600030F1AA /* NSDate+ZWAdd.m */; };
+		5FCF86231FD8E45400D77FCA /* UIView+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF86221FD8E45400D77FCA /* UIView+ZWAdd.m */; };
+		5FCF86261FD8EC6800D77FCA /* UIControl+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF86251FD8EC6800D77FCA /* UIControl+ZWAdd.m */; };
+		5FCF86291FD9077600D77FCA /* UIBarButtonItem+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF86281FD9077600D77FCA /* UIBarButtonItem+ZWAdd.m */; };
+		5FCF862C1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF862B1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.m */; };
 		5FD0FDD41FD77841006A6C19 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0FDD31FD77841006A6C19 /* yw_1222.jpg */; };
 		5FD0FDD91FD77B9B006A6C19 /* NSBundle+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0FDD81FD77B9B006A6C19 /* NSBundle+ZWAdd.m */; };
 		5FD0FDDC1FD780EE006A6C19 /* NSThread+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0FDDB1FD780EE006A6C19 /* NSThread+ZWAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -69,6 +73,14 @@
 		5FA443281FD53BFC0030F1AA /* NSDictionary+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZWAdd.m"; sourceTree = "<group>"; };
 		5FA4432A1FD553600030F1AA /* NSDate+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZWAdd.h"; sourceTree = "<group>"; };
 		5FA4432B1FD553600030F1AA /* NSDate+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZWAdd.m"; sourceTree = "<group>"; };
+		5FCF86211FD8E45400D77FCA /* UIView+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZWAdd.h"; sourceTree = "<group>"; };
+		5FCF86221FD8E45400D77FCA /* UIView+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZWAdd.m"; sourceTree = "<group>"; };
+		5FCF86241FD8EC6800D77FCA /* UIControl+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ZWAdd.h"; sourceTree = "<group>"; };
+		5FCF86251FD8EC6800D77FCA /* UIControl+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ZWAdd.m"; sourceTree = "<group>"; };
+		5FCF86271FD9077600D77FCA /* UIBarButtonItem+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZWAdd.h"; sourceTree = "<group>"; };
+		5FCF86281FD9077600D77FCA /* UIBarButtonItem+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZWAdd.m"; sourceTree = "<group>"; };
+		5FCF862A1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+ZWAdd.h"; sourceTree = "<group>"; };
+		5FCF862B1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+ZWAdd.m"; sourceTree = "<group>"; };
 		5FD0FDD31FD77841006A6C19 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yw_1222.jpg; path = ../../../../../../../../../../Downloads/yw_1222.jpg; sourceTree = "<group>"; };
 		5FD0FDD71FD77B9B006A6C19 /* NSBundle+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ZWAdd.h"; sourceTree = "<group>"; };
 		5FD0FDD81FD77B9B006A6C19 /* NSBundle+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ZWAdd.m"; sourceTree = "<group>"; };
@@ -189,6 +201,14 @@
 				5FD0FDDE1FD786DA006A6C19 /* UIColor+ZWAdd.m */,
 				5FD0FDE01FD7B807006A6C19 /* UIImage+ZWAdd.h */,
 				5FD0FDE11FD7B807006A6C19 /* UIImage+ZWAdd.m */,
+				5FCF86241FD8EC6800D77FCA /* UIControl+ZWAdd.h */,
+				5FCF86251FD8EC6800D77FCA /* UIControl+ZWAdd.m */,
+				5FCF86271FD9077600D77FCA /* UIBarButtonItem+ZWAdd.h */,
+				5FCF86281FD9077600D77FCA /* UIBarButtonItem+ZWAdd.m */,
+				5FCF862A1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.h */,
+				5FCF862B1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.m */,
+				5FCF86211FD8E45400D77FCA /* UIView+ZWAdd.h */,
+				5FCF86221FD8E45400D77FCA /* UIView+ZWAdd.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -395,17 +415,21 @@
 				5FD4BF951FBD2CEF0020072F /* TextView.m in Sources */,
 				5FD0FDE21FD7B807006A6C19 /* UIImage+ZWAdd.m in Sources */,
 				5FA4432C1FD553600030F1AA /* NSDate+ZWAdd.m in Sources */,
+				5FCF86261FD8EC6800D77FCA /* UIControl+ZWAdd.m in Sources */,
 				5F50F2711FD63DFD003B43EC /* UIImage+QRCode.m in Sources */,
+				5FCF86291FD9077600D77FCA /* UIBarButtonItem+ZWAdd.m in Sources */,
 				5F71B64D1FCFCB4E00954698 /* NSObject+performSelector.m in Sources */,
 				5F43E6EE1FCFE87C00C6F221 /* NSString+ZWAdd.m in Sources */,
 				5FD4BF8D1FBD22880020072F /* main.m in Sources */,
 				5FD4BF7F1FBD22880020072F /* AppDelegate.m in Sources */,
 				5F50F3221FD6A5F9003B43EC /* NSTimer+ZWAdd.m in Sources */,
 				5F43E6F11FCFE98F00C6F221 /* NSData+ZWAdd.m in Sources */,
+				5FCF86231FD8E45400D77FCA /* UIView+ZWAdd.m in Sources */,
 				5FA443291FD53BFC0030F1AA /* NSDictionary+ZWAdd.m in Sources */,
 				5F78C9921FCEB92400516913 /* NSObject+ZWAdd.m in Sources */,
 				5F4D12121FCFB30400B39529 /* NSObject+ZWAddForKVO.m in Sources */,
 				5FD0FDD91FD77B9B006A6C19 /* NSBundle+ZWAdd.m in Sources */,
+				5FCF862C1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.m in Sources */,
 				5FD0FDE51FD7BE2D006A6C19 /* ZWCGUtilities.m in Sources */,
 				5F43E6F41FD00B3C00C6F221 /* NSNumber+ZWAdd.m in Sources */,
 				5F50F31F1FD6A30B003B43EC /* NSKeyedUnarchiver+ZWAdd.m in Sources */,
