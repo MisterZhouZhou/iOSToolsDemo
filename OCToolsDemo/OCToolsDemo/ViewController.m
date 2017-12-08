@@ -281,7 +281,21 @@ ZWSYNTH_DUMMY_CLASS(Person)
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-   
+  
+}
+
+- (void)test{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    view.backgroundColor = [UIColor blueColor];
+    UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [vc.view addSubview:view];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(close)];
+    [view addGestureRecognizer:tap];
+}
+
+- (void)close{
+    NSLog(@"ddd");
 }
 
 - (void)transformLate{

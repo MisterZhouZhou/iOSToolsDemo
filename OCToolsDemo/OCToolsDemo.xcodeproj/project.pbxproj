@@ -17,6 +17,14 @@
 		5F50F31F1FD6A30B003B43EC /* NSKeyedUnarchiver+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F50F31E1FD6A30B003B43EC /* NSKeyedUnarchiver+ZWAdd.m */; };
 		5F50F3221FD6A5F9003B43EC /* NSTimer+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F50F3211FD6A5F9003B43EC /* NSTimer+ZWAdd.m */; };
 		5F71B64D1FCFCB4E00954698 /* NSObject+performSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F71B64C1FCFCB4E00954698 /* NSObject+performSelector.m */; };
+		5F763FD61FDA651C007DC385 /* UIScrollView+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FD51FDA651C007DC385 /* UIScrollView+ZWAdd.m */; };
+		5F763FD91FDA6635007DC385 /* UITableView+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FD81FDA6635007DC385 /* UITableView+ZWAdd.m */; };
+		5F763FDC1FDA6793007DC385 /* UITextField+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FDB1FDA6793007DC385 /* UITextField+ZWAdd.m */; };
+		5F763FDF1FDA684C007DC385 /* UIScreen+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FDE1FDA684C007DC385 /* UIScreen+ZWAdd.m */; };
+		5F763FE21FDA68FF007DC385 /* UIDevice+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FE11FDA68FF007DC385 /* UIDevice+ZWAdd.m */; };
+		5F763FE51FDA7DB2007DC385 /* UIApplication+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FE41FDA7DB2007DC385 /* UIApplication+ZWAdd.m */; };
+		5F763FE81FDA8A74007DC385 /* UIFont+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FE71FDA8A74007DC385 /* UIFont+ZWAdd.m */; };
+		5F763FEB1FDA98F1007DC385 /* UIBezierPath+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FEA1FDA98F1007DC385 /* UIBezierPath+ZWAdd.m */; };
 		5F78C9921FCEB92400516913 /* NSObject+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F78C9911FCEB92400516913 /* NSObject+ZWAdd.m */; };
 		5FA443261FD535E30030F1AA /* NSArray+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA443251FD535E30030F1AA /* NSArray+ZWAdd.m */; };
 		5FA443291FD53BFC0030F1AA /* NSDictionary+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA443281FD53BFC0030F1AA /* NSDictionary+ZWAdd.m */; };
@@ -63,6 +71,22 @@
 		5F50F3211FD6A5F9003B43EC /* NSTimer+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+ZWAdd.m"; sourceTree = "<group>"; };
 		5F71B64B1FCFCB4E00954698 /* NSObject+performSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+performSelector.h"; sourceTree = "<group>"; };
 		5F71B64C1FCFCB4E00954698 /* NSObject+performSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+performSelector.m"; sourceTree = "<group>"; };
+		5F763FD41FDA651C007DC385 /* UIScrollView+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ZWAdd.h"; sourceTree = "<group>"; };
+		5F763FD51FDA651C007DC385 /* UIScrollView+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ZWAdd.m"; sourceTree = "<group>"; };
+		5F763FD71FDA6635007DC385 /* UITableView+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZWAdd.h"; sourceTree = "<group>"; };
+		5F763FD81FDA6635007DC385 /* UITableView+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZWAdd.m"; sourceTree = "<group>"; };
+		5F763FDA1FDA6793007DC385 /* UITextField+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZWAdd.h"; sourceTree = "<group>"; };
+		5F763FDB1FDA6793007DC385 /* UITextField+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZWAdd.m"; sourceTree = "<group>"; };
+		5F763FDD1FDA684C007DC385 /* UIScreen+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ZWAdd.h"; sourceTree = "<group>"; };
+		5F763FDE1FDA684C007DC385 /* UIScreen+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ZWAdd.m"; sourceTree = "<group>"; };
+		5F763FE01FDA68FF007DC385 /* UIDevice+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ZWAdd.h"; sourceTree = "<group>"; };
+		5F763FE11FDA68FF007DC385 /* UIDevice+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ZWAdd.m"; sourceTree = "<group>"; };
+		5F763FE31FDA7DB2007DC385 /* UIApplication+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ZWAdd.h"; sourceTree = "<group>"; };
+		5F763FE41FDA7DB2007DC385 /* UIApplication+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ZWAdd.m"; sourceTree = "<group>"; };
+		5F763FE61FDA8A74007DC385 /* UIFont+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+ZWAdd.h"; sourceTree = "<group>"; };
+		5F763FE71FDA8A74007DC385 /* UIFont+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ZWAdd.m"; sourceTree = "<group>"; };
+		5F763FE91FDA98F1007DC385 /* UIBezierPath+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+ZWAdd.h"; sourceTree = "<group>"; };
+		5F763FEA1FDA98F1007DC385 /* UIBezierPath+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+ZWAdd.m"; sourceTree = "<group>"; };
 		5F78C9851FCE967200516913 /* ZWKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWKit.h; sourceTree = "<group>"; };
 		5F78C9871FCE9B0800516913 /* ZWKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWKitMacro.h; sourceTree = "<group>"; };
 		5F78C9901FCEB92400516913 /* NSObject+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZWAdd.h"; sourceTree = "<group>"; };
@@ -209,6 +233,22 @@
 				5FCF862B1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.m */,
 				5FCF86211FD8E45400D77FCA /* UIView+ZWAdd.h */,
 				5FCF86221FD8E45400D77FCA /* UIView+ZWAdd.m */,
+				5F763FD41FDA651C007DC385 /* UIScrollView+ZWAdd.h */,
+				5F763FD51FDA651C007DC385 /* UIScrollView+ZWAdd.m */,
+				5F763FD71FDA6635007DC385 /* UITableView+ZWAdd.h */,
+				5F763FD81FDA6635007DC385 /* UITableView+ZWAdd.m */,
+				5F763FDA1FDA6793007DC385 /* UITextField+ZWAdd.h */,
+				5F763FDB1FDA6793007DC385 /* UITextField+ZWAdd.m */,
+				5F763FDD1FDA684C007DC385 /* UIScreen+ZWAdd.h */,
+				5F763FDE1FDA684C007DC385 /* UIScreen+ZWAdd.m */,
+				5F763FE01FDA68FF007DC385 /* UIDevice+ZWAdd.h */,
+				5F763FE11FDA68FF007DC385 /* UIDevice+ZWAdd.m */,
+				5F763FE31FDA7DB2007DC385 /* UIApplication+ZWAdd.h */,
+				5F763FE41FDA7DB2007DC385 /* UIApplication+ZWAdd.m */,
+				5F763FE61FDA8A74007DC385 /* UIFont+ZWAdd.h */,
+				5F763FE71FDA8A74007DC385 /* UIFont+ZWAdd.m */,
+				5F763FE91FDA98F1007DC385 /* UIBezierPath+ZWAdd.h */,
+				5F763FEA1FDA98F1007DC385 /* UIBezierPath+ZWAdd.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -409,18 +449,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F763FEB1FDA98F1007DC385 /* UIBezierPath+ZWAdd.m in Sources */,
 				5F4D120F1FCFB1B700B39529 /* NSObject+ZWAddForARC.m in Sources */,
+				5F763FDC1FDA6793007DC385 /* UITextField+ZWAdd.m in Sources */,
 				5FD4BF821FBD22880020072F /* ViewController.m in Sources */,
 				5FA443261FD535E30030F1AA /* NSArray+ZWAdd.m in Sources */,
 				5FD4BF951FBD2CEF0020072F /* TextView.m in Sources */,
 				5FD0FDE21FD7B807006A6C19 /* UIImage+ZWAdd.m in Sources */,
 				5FA4432C1FD553600030F1AA /* NSDate+ZWAdd.m in Sources */,
 				5FCF86261FD8EC6800D77FCA /* UIControl+ZWAdd.m in Sources */,
+				5F763FE81FDA8A74007DC385 /* UIFont+ZWAdd.m in Sources */,
 				5F50F2711FD63DFD003B43EC /* UIImage+QRCode.m in Sources */,
 				5FCF86291FD9077600D77FCA /* UIBarButtonItem+ZWAdd.m in Sources */,
 				5F71B64D1FCFCB4E00954698 /* NSObject+performSelector.m in Sources */,
+				5F763FE21FDA68FF007DC385 /* UIDevice+ZWAdd.m in Sources */,
 				5F43E6EE1FCFE87C00C6F221 /* NSString+ZWAdd.m in Sources */,
+				5F763FD61FDA651C007DC385 /* UIScrollView+ZWAdd.m in Sources */,
 				5FD4BF8D1FBD22880020072F /* main.m in Sources */,
+				5F763FE51FDA7DB2007DC385 /* UIApplication+ZWAdd.m in Sources */,
+				5F763FDF1FDA684C007DC385 /* UIScreen+ZWAdd.m in Sources */,
 				5FD4BF7F1FBD22880020072F /* AppDelegate.m in Sources */,
 				5F50F3221FD6A5F9003B43EC /* NSTimer+ZWAdd.m in Sources */,
 				5F43E6F11FCFE98F00C6F221 /* NSData+ZWAdd.m in Sources */,
@@ -434,6 +481,7 @@
 				5F43E6F41FD00B3C00C6F221 /* NSNumber+ZWAdd.m in Sources */,
 				5F50F31F1FD6A30B003B43EC /* NSKeyedUnarchiver+ZWAdd.m in Sources */,
 				5F50F31C1FD6A185003B43EC /* NSNotificationCenter+ZWAdd.m in Sources */,
+				5F763FD91FDA6635007DC385 /* UITableView+ZWAdd.m in Sources */,
 				5FE752611FCD04A600F9B52E /* ThreadTestViewController.m in Sources */,
 				5FD0FDDF1FD786DA006A6C19 /* UIColor+ZWAdd.m in Sources */,
 				5FD0FDDC1FD780EE006A6C19 /* NSThread+ZWAdd.m in Sources */,

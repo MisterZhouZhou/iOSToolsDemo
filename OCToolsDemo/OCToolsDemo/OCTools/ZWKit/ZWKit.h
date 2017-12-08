@@ -35,5 +35,14 @@ FOUNDATION_EXPORT const unsigned char ZWKitVersionString[];
 
 // UIkit
 #import "UIColor+ZWAdd.h"
+#import "UIImage+ZWAdd.h"
+#import "UIControl+ZWAdd.h"
+#import "UIBarButtonItem+ZWAdd.h"
+#import "UIGestureRecognizer+ZWAdd.h"
+#import "UIView+ZWAdd.h"
+#import "UIScrollView+ZWAdd.h"
+
+// Quzrtz
+#import "ZWCGUtilities.h"
 
 #endif
