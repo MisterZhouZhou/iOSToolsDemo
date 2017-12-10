@@ -386,6 +386,14 @@ ZWSYNTH_DUMMY_CLASS(NSString_ZWAdd)
     return [NSNumber numberWithString:self];
 }
 
+#pragma mark - 字符串转NSData
+- (NSData *)dataValue {
+    return [self dataUsingEncoding:NSUTF8StringEncoding];
+}
 
+#pragma mark - 字符串转NSRange
+- (NSRange)rangeOfAll {
+    return NSMakeRange(0, self.length);
+}
 
 @end
