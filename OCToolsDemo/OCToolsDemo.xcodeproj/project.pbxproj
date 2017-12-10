@@ -47,6 +47,9 @@
 		5FD4BF951FBD2CEF0020072F /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD4BF941FBD2CEF0020072F /* TextView.m */; };
 		5FE7525E1FCD040400F9B52E /* description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5FE7525D1FCD040400F9B52E /* description.txt */; };
 		5FE752611FCD04A600F9B52E /* ThreadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE752601FCD04A600F9B52E /* ThreadTestViewController.m */; };
+		A05E478A1FDCD126006ED9E1 /* CALayer+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E47891FDCD126006ED9E1 /* CALayer+ZWAdd.m */; };
+		A05E47901FDCD62D006ED9E1 /* NSObject+ZWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E478F1FDCD62D006ED9E1 /* NSObject+ZWModel.m */; };
+		A05E47931FDD0737006ED9E1 /* ZWClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A05E47921FDD0737006ED9E1 /* ZWClassInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +134,12 @@
 		5FE7525D1FCD040400F9B52E /* description.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
 		5FE7525F1FCD04A600F9B52E /* ThreadTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadTestViewController.h; sourceTree = "<group>"; };
 		5FE752601FCD04A600F9B52E /* ThreadTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadTestViewController.m; sourceTree = "<group>"; };
+		A05E47881FDCD126006ED9E1 /* CALayer+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+ZWAdd.h"; sourceTree = "<group>"; };
+		A05E47891FDCD126006ED9E1 /* CALayer+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ZWAdd.m"; sourceTree = "<group>"; };
+		A05E478E1FDCD62D006ED9E1 /* NSObject+ZWModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZWModel.h"; sourceTree = "<group>"; };
+		A05E478F1FDCD62D006ED9E1 /* NSObject+ZWModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZWModel.m"; sourceTree = "<group>"; };
+		A05E47911FDD0737006ED9E1 /* ZWClassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWClassInfo.h; sourceTree = "<group>"; };
+		A05E47921FDD0737006ED9E1 /* ZWClassInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWClassInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,15 +266,10 @@
 			children = (
 				5FD0FDE31FD7BE2D006A6C19 /* ZWCGUtilities.h */,
 				5FD0FDE41FD7BE2D006A6C19 /* ZWCGUtilities.m */,
+				A05E47881FDCD126006ED9E1 /* CALayer+ZWAdd.h */,
+				A05E47891FDCD126006ED9E1 /* CALayer+ZWAdd.m */,
 			);
 			path = Quartz;
-			sourceTree = "<group>";
-		};
-		5F78C98B1FCEB7BF00516913 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		5F78C98C1FCEB7CB00516913 /* Cache */ = {
@@ -347,11 +351,11 @@
 			children = (
 				5F78C9851FCE967200516913 /* ZWKit.h */,
 				5F78C9861FCE9ADC00516913 /* Base */,
+				A05E478D1FDCD5FC006ED9E1 /* Model */,
 				5F78C98E1FCEB7D900516913 /* Text */,
 				5F78C98F1FCEB7DF00516913 /* Utility */,
 				5F78C98D1FCEB7D400516913 /* Image */,
 				5F78C98C1FCEB7CB00516913 /* Cache */,
-				5F78C98B1FCEB7BF00516913 /* Model */,
 			);
 			path = ZWKit;
 			sourceTree = "<group>";
@@ -373,6 +377,17 @@
 				5FE752601FCD04A600F9B52E /* ThreadTestViewController.m */,
 			);
 			path = "OSSpinLock(线程锁的对比)";
+			sourceTree = "<group>";
+		};
+		A05E478D1FDCD5FC006ED9E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A05E478E1FDCD62D006ED9E1 /* NSObject+ZWModel.h */,
+				A05E478F1FDCD62D006ED9E1 /* NSObject+ZWModel.m */,
+				A05E47911FDD0737006ED9E1 /* ZWClassInfo.h */,
+				A05E47921FDD0737006ED9E1 /* ZWClassInfo.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,10 +468,12 @@
 				5FD4BF821FBD22880020072F /* ViewController.m in Sources */,
 				5FA443261FD535E30030F1AA /* NSArray+ZWAdd.m in Sources */,
 				5FD4BF951FBD2CEF0020072F /* TextView.m in Sources */,
+				A05E478A1FDCD126006ED9E1 /* CALayer+ZWAdd.m in Sources */,
 				5FD0FDE21FD7B807006A6C19 /* UIImage+ZWAdd.m in Sources */,
 				5FA4432C1FD553600030F1AA /* NSDate+ZWAdd.m in Sources */,
 				5FCF86261FD8EC6800D77FCA /* UIControl+ZWAdd.m in Sources */,
 				5F763FE81FDA8A74007DC385 /* UIFont+ZWAdd.m in Sources */,
+				A05E47931FDD0737006ED9E1 /* ZWClassInfo.m in Sources */,
 				5F50F2711FD63DFD003B43EC /* UIImage+QRCode.m in Sources */,
 				5FCF86291FD9077600D77FCA /* UIBarButtonItem+ZWAdd.m in Sources */,
 				5F71B64D1FCFCB4E00954698 /* NSObject+performSelector.m in Sources */,
@@ -468,6 +485,7 @@
 				5F763FDF1FDA684C007DC385 /* UIScreen+ZWAdd.m in Sources */,
 				5FD4BF7F1FBD22880020072F /* AppDelegate.m in Sources */,
 				5F50F3221FD6A5F9003B43EC /* NSTimer+ZWAdd.m in Sources */,
+				A05E47901FDCD62D006ED9E1 /* NSObject+ZWModel.m in Sources */,
 				5F43E6F11FCFE98F00C6F221 /* NSData+ZWAdd.m in Sources */,
 				5FCF86231FD8E45400D77FCA /* UIView+ZWAdd.m in Sources */,
 				5FA443291FD53BFC0030F1AA /* NSDictionary+ZWAdd.m in Sources */,

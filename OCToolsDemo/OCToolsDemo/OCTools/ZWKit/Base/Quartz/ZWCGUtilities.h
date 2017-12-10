@@ -107,7 +107,7 @@ static inline UIEdgeInsets UIEdgeInsetsInvert(UIEdgeInsets insets) {
 }
 
 
-/// Convert CALayer's gravity string to UIViewContentMode.
+/// Convert CALayer's gravity string to UIViewContentMode. contentsGravity To UIViewContentMode
 UIViewContentMode ZWCAGravityToUIViewContentMode(NSString *gravity);
 
 

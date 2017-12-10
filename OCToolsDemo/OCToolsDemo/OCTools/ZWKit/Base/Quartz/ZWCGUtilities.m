@@ -154,7 +154,7 @@ CGAffineTransform YYCGAffineTransformGetFromViews(UIView *from, UIView *to) {
 }
 
 
-
+#pragma mark - contentsGravity To UIViewContentMode
 UIViewContentMode ZWCAGravityToUIViewContentMode(NSString *gravity) {
     static NSDictionary *dic;
     static dispatch_once_t onceToken;
