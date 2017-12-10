@@ -51,6 +51,16 @@ ZW_EXTERN_C_BEGIN
 #define ZWAssertMainThread() NSAssert([NSThread isMainThread], @"This method must be called on the main thread")
 #define ZWCAssertMainThread() NSCAssert([NSThread isMainThread], @"This method must be called on the main thread")
 
+
+ /**
+ 版本可用iOS系统数 AVAILABLE_IOS_VERSION(9_0)
+ */
+#ifndef AVAILABLE_IOS_VERSION
+#define AVAILABLE_IOS_VERSION(ios_version) NS_AVAILABLE_IOS(ios_version)
+#endif
+
+
+
 /**
  快速添加类实现方式
  */
@@ -74,6 +84,7 @@ ZW_EXTERN_C_BEGIN
 
 
 /**
+ // 一键式生成getter,setter
  Synthsize a dynamic object property in @implementation scope.
  It allows us to add custom properties to existing classes in categories.
  

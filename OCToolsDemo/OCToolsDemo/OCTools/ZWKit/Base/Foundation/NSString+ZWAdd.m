@@ -386,9 +386,22 @@ ZWSYNTH_DUMMY_CLASS(NSString_ZWAdd)
     return [NSNumber numberWithString:self];
 }
 
-#pragma mark - 字符串转NSData
 - (NSData *)dataValue {
     return [self dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (id)jsonValueDecoded {
+    return [[self dataValue] jsonValueDecoded];
+}
+
++ (NSString *)stringNamed:(NSString *)name {
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@""];
+    NSString *str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+    if (!str) {
+        path = [[NSBundle mainBundle] pathForResource:name ofType:@"txt"];
+        str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+    }
+    return str;
 }
 
 #pragma mark - 字符串转NSRange
