@@ -12,6 +12,7 @@
 #import "ZWKit.h"
 #import <objc/runtime.h>
 #import "UIImage+QRCode.h"
+#import "AttributeMethod.h"
 
 
 ZWSYNTH_DUMMY_CLASS(Person)
@@ -26,6 +27,10 @@ ZWSYNTH_DUMMY_CLASS(Person)
 
 
 @interface ViewController (MethodAdd)
+
+- (void)testDeprecated1 ZWDEPRECATED();
+- (void)testDeprecated2 ZWDEPRECATED("hh");
+
 @end
 @implementation ViewController (MethodAdd)
 
@@ -281,7 +286,13 @@ ZWSYNTH_DUMMY_CLASS(Person)
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-  
+   // [[AttributeMethod new] methodDeprecated:@"method1"];
+   //    [AttributeMethod new].deprecatedProperty;
+   //    [AttributeMethod new].unAvailableProperty;
+   //    [self testDeprecated];
+    
+   [[AttributeMethod new] useCleanUp];
+   [[AttributeMethod new] createBlock];
 }
 
 - (void)test{

@@ -26,6 +26,8 @@
 		5F763FE81FDA8A74007DC385 /* UIFont+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FE71FDA8A74007DC385 /* UIFont+ZWAdd.m */; };
 		5F763FEB1FDA98F1007DC385 /* UIBezierPath+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F763FEA1FDA98F1007DC385 /* UIBezierPath+ZWAdd.m */; };
 		5F78C9921FCEB92400516913 /* NSObject+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F78C9911FCEB92400516913 /* NSObject+ZWAdd.m */; };
+		5F79F1491FDE182E00A7C711 /* AttributeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F79F1481FDE182E00A7C711 /* AttributeMethod.m */; };
+		5F79F14B1FDE185700A7C711 /* AttributeDes.md in Resources */ = {isa = PBXBuildFile; fileRef = 5F79F14A1FDE185700A7C711 /* AttributeDes.md */; };
 		5FA443261FD535E30030F1AA /* NSArray+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA443251FD535E30030F1AA /* NSArray+ZWAdd.m */; };
 		5FA443291FD53BFC0030F1AA /* NSDictionary+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA443281FD53BFC0030F1AA /* NSDictionary+ZWAdd.m */; };
 		5FA4432C1FD553600030F1AA /* NSDate+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4432B1FD553600030F1AA /* NSDate+ZWAdd.m */; };
@@ -93,6 +95,9 @@
 		5F78C9871FCE9B0800516913 /* ZWKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWKitMacro.h; sourceTree = "<group>"; };
 		5F78C9901FCEB92400516913 /* NSObject+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZWAdd.h"; sourceTree = "<group>"; };
 		5F78C9911FCEB92400516913 /* NSObject+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZWAdd.m"; sourceTree = "<group>"; };
+		5F79F1471FDE182E00A7C711 /* AttributeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeMethod.h; sourceTree = "<group>"; };
+		5F79F1481FDE182E00A7C711 /* AttributeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeMethod.m; sourceTree = "<group>"; };
+		5F79F14A1FDE185700A7C711 /* AttributeDes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AttributeDes.md; sourceTree = "<group>"; };
 		5FA443241FD535E30030F1AA /* NSArray+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZWAdd.h"; sourceTree = "<group>"; };
 		5FA443251FD535E30030F1AA /* NSArray+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZWAdd.m"; sourceTree = "<group>"; };
 		5FA443271FD53BFC0030F1AA /* NSDictionary+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZWAdd.h"; sourceTree = "<group>"; };
@@ -300,6 +305,16 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		5F79F1461FDE17F700A7C711 /* Attribute黑魔法 */ = {
+			isa = PBXGroup;
+			children = (
+				5F79F1471FDE182E00A7C711 /* AttributeMethod.h */,
+				5F79F1481FDE182E00A7C711 /* AttributeMethod.m */,
+				5F79F14A1FDE185700A7C711 /* AttributeDes.md */,
+			);
+			path = "Attribute黑魔法";
+			sourceTree = "<group>";
+		};
 		5FD4BF711FBD22880020072F = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +378,7 @@
 		5FE7525A1FCD034E00F9B52E /* OCTools性能测试 */ = {
 			isa = PBXGroup;
 			children = (
+				5F79F1461FDE17F700A7C711 /* Attribute黑魔法 */,
 				5FE7525B1FCD036900F9B52E /* OSSpinLock(线程锁的对比) */,
 			);
 			path = "OCTools性能测试";
@@ -448,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F79F14B1FDE185700A7C711 /* AttributeDes.md in Resources */,
 				5FD4BF8A1FBD22880020072F /* LaunchScreen.storyboard in Resources */,
 				5FE7525E1FCD040400F9B52E /* description.txt in Resources */,
 				5FD4BF871FBD22880020072F /* Assets.xcassets in Resources */,
@@ -487,6 +504,7 @@
 				5F50F3221FD6A5F9003B43EC /* NSTimer+ZWAdd.m in Sources */,
 				A05E47901FDCD62D006ED9E1 /* NSObject+ZWModel.m in Sources */,
 				5F43E6F11FCFE98F00C6F221 /* NSData+ZWAdd.m in Sources */,
+				5F79F1491FDE182E00A7C711 /* AttributeMethod.m in Sources */,
 				5FCF86231FD8E45400D77FCA /* UIView+ZWAdd.m in Sources */,
 				5FA443291FD53BFC0030F1AA /* NSDictionary+ZWAdd.m in Sources */,
 				5F78C9921FCEB92400516913 /* NSObject+ZWAdd.m in Sources */,
