@@ -495,6 +495,7 @@
 		5FD4BF7C1FBD22880020072F /* OCToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5F79F1461FDE17F700A7C711 /* Attribute黑魔法 */,
 				5FE7525A1FCD034E00F9B52E /* OCTools性能测试 */,
 				5FE752581FCD033800F9B52E /* OCTools */,
 				5FD4BF7D1FBD22880020072F /* AppDelegate.h */,
@@ -539,7 +540,6 @@
 		5FE7525A1FCD034E00F9B52E /* OCTools性能测试 */ = {
 			isa = PBXGroup;
 			children = (
-				5F79F1461FDE17F700A7C711 /* Attribute黑魔法 */,
 				5FE7525B1FCD036900F9B52E /* OSSpinLock(线程锁的对比) */,
 			);
 			path = "OCTools性能测试";

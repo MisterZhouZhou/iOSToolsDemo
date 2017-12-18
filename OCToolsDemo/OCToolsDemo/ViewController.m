@@ -151,7 +151,9 @@ ZWSYNTH_DUMMY_CLASS(Person)
     [self.view addSubview:view];
     //    [view performSelector:@selector(setBackgroundColor:) withTheObjects:@[[UIColor greenColor]]];
     [view performSelectorWithTheArgs:@selector(setBackgroundColor:), [UIColor greenColor], [UIColor yellowColor]];
-
+    [view performSelectorWithTheBlock:^(int value) {
+        
+    }];
 }
 
 - (void)testAddObserverBlockForKeyPath{
@@ -286,13 +288,19 @@ ZWSYNTH_DUMMY_CLASS(Person)
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-   // [[AttributeMethod new] methodDeprecated:@"method1"];
-   //    [AttributeMethod new].deprecatedProperty;
-   //    [AttributeMethod new].unAvailableProperty;
-   //    [self testDeprecated];
+    [self performSelectorWithTheBlock:^(int value) {
+        NSLog(@"%d",value);
+    }];
+}
+
+- (void)testAttrtute{
+    // [[AttributeMethod new] methodDeprecated:@"method1"];
+    //    [AttributeMethod new].deprecatedProperty;
+    //    [AttributeMethod new].unAvailableProperty;
+    //    [self testDeprecated];
     
-   [[AttributeMethod new] useCleanUp];
-   [[AttributeMethod new] createBlock];
+    [[AttributeMethod new] useCleanUp];
+    [[AttributeMethod new] createBlock];
     
     
 }
