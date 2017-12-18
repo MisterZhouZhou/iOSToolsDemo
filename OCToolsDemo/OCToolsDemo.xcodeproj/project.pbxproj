@@ -49,6 +49,9 @@
 		5FA91D4E1FE7AF15005A18AF /* ZWTextKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA91D4D1FE7AF15005A18AF /* ZWTextKeyboardManager.m */; };
 		5FA91D511FE7B128005A18AF /* ZWAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA91D501FE7B128005A18AF /* ZWAsyncLayer.m */; };
 		5FA91D541FE7B4AE005A18AF /* ZWSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA91D531FE7B4AE005A18AF /* ZWSentinel.m */; };
+		5FA91D571FE7B5B4005A18AF /* ZWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA91D561FE7B5B4005A18AF /* ZWTextView.m */; };
+		5FA91D5A1FE7B69B005A18AF /* ZWTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA91D591FE7B69B005A18AF /* ZWTransaction.m */; };
+		5FA91D5D1FE7B6F7005A18AF /* UIPasteboard+ZWText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA91D5C1FE7B6F7005A18AF /* UIPasteboard+ZWText.m */; };
 		5FADD7F71FE2575800A97775 /* ZWTextUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FADD7F61FE2575800A97775 /* ZWTextUtilities.m */; };
 		5FADD7FA1FE2590E00A97775 /* ZWTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FADD7F91FE2590E00A97775 /* ZWTextRunDelegate.m */; };
 		5FADD7FD1FE25E9900A97775 /* ZWTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FADD7FC1FE25E9900A97775 /* ZWTextRubyAnnotation.m */; };
@@ -166,6 +169,12 @@
 		5FA91D501FE7B128005A18AF /* ZWAsyncLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWAsyncLayer.m; sourceTree = "<group>"; };
 		5FA91D521FE7B4AE005A18AF /* ZWSentinel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWSentinel.h; sourceTree = "<group>"; };
 		5FA91D531FE7B4AE005A18AF /* ZWSentinel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWSentinel.m; sourceTree = "<group>"; };
+		5FA91D551FE7B5B4005A18AF /* ZWTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTextView.h; sourceTree = "<group>"; };
+		5FA91D561FE7B5B4005A18AF /* ZWTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTextView.m; sourceTree = "<group>"; };
+		5FA91D581FE7B69B005A18AF /* ZWTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTransaction.h; sourceTree = "<group>"; };
+		5FA91D591FE7B69B005A18AF /* ZWTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTransaction.m; sourceTree = "<group>"; };
+		5FA91D5B1FE7B6F7005A18AF /* UIPasteboard+ZWText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPasteboard+ZWText.h"; sourceTree = "<group>"; };
+		5FA91D5C1FE7B6F7005A18AF /* UIPasteboard+ZWText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPasteboard+ZWText.m"; sourceTree = "<group>"; };
 		5FADD7F51FE2575800A97775 /* ZWTextUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTextUtilities.h; sourceTree = "<group>"; };
 		5FADD7F61FE2575800A97775 /* ZWTextUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTextUtilities.m; sourceTree = "<group>"; };
 		5FADD7F81FE2590E00A97775 /* ZWTextRunDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTextRunDelegate.h; sourceTree = "<group>"; };
@@ -255,6 +264,8 @@
 				5FADD7FF1FE25F6F00A97775 /* NSAttributedString+ZWText.m */,
 				5FADD8011FE260C800A97775 /* NSParagraphStyle+ZWText.h */,
 				5FADD8021FE260C800A97775 /* NSParagraphStyle+ZWText.m */,
+				5FA91D5B1FE7B6F7005A18AF /* UIPasteboard+ZWText.h */,
+				5FA91D5C1FE7B6F7005A18AF /* UIPasteboard+ZWText.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -432,6 +443,8 @@
 			children = (
 				5F424C3E1FDF6D0D0006B6F5 /* ZWLabel.h */,
 				5F424C3F1FDF6D0D0006B6F5 /* ZWLabel.m */,
+				5FA91D551FE7B5B4005A18AF /* ZWTextView.h */,
+				5FA91D561FE7B5B4005A18AF /* ZWTextView.m */,
 				5F424C411FDF6E520006B6F5 /* String */,
 				5F424C4B1FDF71FB0006B6F5 /* Component */,
 			);
@@ -447,6 +460,8 @@
 				5FA91D501FE7B128005A18AF /* ZWAsyncLayer.m */,
 				5FA91D521FE7B4AE005A18AF /* ZWSentinel.h */,
 				5FA91D531FE7B4AE005A18AF /* ZWSentinel.m */,
+				5FA91D581FE7B69B005A18AF /* ZWTransaction.h */,
+				5FA91D591FE7B69B005A18AF /* ZWTransaction.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -635,6 +650,7 @@
 				5FA443261FD535E30030F1AA /* NSArray+ZWAdd.m in Sources */,
 				5FA91D511FE7B128005A18AF /* ZWAsyncLayer.m in Sources */,
 				5FA91D4B1FE7AC9E005A18AF /* ZWTextEffectWindow.m in Sources */,
+				5FA91D571FE7B5B4005A18AF /* ZWTextView.m in Sources */,
 				5FA91D421FE7A9DD005A18AF /* ZWTextContainerView.m in Sources */,
 				5F424C4E1FDF730E0006B6F5 /* ZWTextLayout.m in Sources */,
 				5FD4BF951FBD2CEF0020072F /* TextView.m in Sources */,
@@ -649,6 +665,7 @@
 				5F424C441FDF6EDC0006B6F5 /* ZWTextAttribute.m in Sources */,
 				5FA91D541FE7B4AE005A18AF /* ZWSentinel.m in Sources */,
 				5F424C401FDF6D0D0006B6F5 /* ZWLabel.m in Sources */,
+				5FA91D5D1FE7B6F7005A18AF /* UIPasteboard+ZWText.m in Sources */,
 				5F763FE81FDA8A74007DC385 /* UIFont+ZWAdd.m in Sources */,
 				5FADD8001FE25F6F00A97775 /* NSAttributedString+ZWText.m in Sources */,
 				5FA91D3F1FE7A991005A18AF /* ZWWeakProxy.m in Sources */,
@@ -689,6 +706,7 @@
 				5F50F31C1FD6A185003B43EC /* NSNotificationCenter+ZWAdd.m in Sources */,
 				5F763FD91FDA6635007DC385 /* UITableView+ZWAdd.m in Sources */,
 				5FE752611FCD04A600F9B52E /* ThreadTestViewController.m in Sources */,
+				5FA91D5A1FE7B69B005A18AF /* ZWTransaction.m in Sources */,
 				5FD0FDDF1FD786DA006A6C19 /* UIColor+ZWAdd.m in Sources */,
 				5FD0FDDC1FD780EE006A6C19 /* NSThread+ZWAdd.m in Sources */,
 			);
