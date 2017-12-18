@@ -293,6 +293,8 @@ ZWSYNTH_DUMMY_CLASS(Person)
     
    [[AttributeMethod new] useCleanUp];
    [[AttributeMethod new] createBlock];
+    
+    
 }
 
 - (void)test{

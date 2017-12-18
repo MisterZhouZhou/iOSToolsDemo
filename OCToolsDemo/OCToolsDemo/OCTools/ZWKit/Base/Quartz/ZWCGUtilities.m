@@ -139,7 +139,7 @@ CGAffineTransform ZWCGAffineTransformGetFromPoints(CGPoint before[3], CGPoint af
 }
 
 
-CGAffineTransform YYCGAffineTransformGetFromViews(UIView *from, UIView *to) {
+CGAffineTransform ZWCGAffineTransformGetFromViews(UIView *from, UIView *to) {
     if (!from || !to) return CGAffineTransformIdentity;
     
     CGPoint before[3], after[3];

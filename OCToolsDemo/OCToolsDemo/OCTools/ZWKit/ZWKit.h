@@ -41,8 +41,37 @@ FOUNDATION_EXPORT const unsigned char ZWKitVersionString[];
 #import "UIGestureRecognizer+ZWAdd.h"
 #import "UIView+ZWAdd.h"
 #import "UIScrollView+ZWAdd.h"
+#import "UITableView+ZWAdd.h"
+#import "UITextField+ZWAdd.h"
+#import "UIScreen+ZWAdd.h"
+#import "UIDevice+ZWAdd.h"
+#import "UIApplication+ZWAdd.h"
+#import "UIFont+ZWAdd.h"
+#import "UIBezierPath+ZWAdd.h"
 
 // Quzrtz
 #import "ZWCGUtilities.h"
+#import "CALayer+ZWAdd.h"
+
+
+
+// Text
+#import "ZWLabel.h"
+
+// Text string
+#import "ZWTextAttribute.h"
+#import "ZWTextArchiver.h"
+#import "ZWTextParser.h"
+#import "ZWTextUtilities.h"
+#import "ZWTextRunDelegate.h"
+#import "ZWTextRubyAnnotation.h"
+#import "NSAttributedString+ZWText.h"
+#import "NSParagraphStyle+ZWText.h"
+
+// Text component
+#import "ZWTextLayout.h"
+#import "ZWTextLine.h"
+#import "ZWTextInput.h"
+#import "ZWTextDebugOption.h"
 
 #endif

@@ -219,7 +219,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Provide some data-model method for NSArray.
  */
-@interface NSArray (YYModel)
+@interface NSArray (ZWModel)
 
 /**
  Creates and returns an array from a json-array.
@@ -240,7 +240,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Provide some data-model method for NSDictionary.
  */
-@interface NSDictionary (YYModel)
+@interface NSDictionary (ZWModel)
 
 /**
  Creates and returns a dictionary from a json.
@@ -262,7 +262,7 @@ NS_ASSUME_NONNULL_BEGIN
  more method in this protocol to change the default key-value transform process.
  There's no need to add '<YYModel>' to your class header.
  */
-@protocol YYModel <NSObject>
+@protocol ZWModel <NSObject>
 @optional
 
 /**
