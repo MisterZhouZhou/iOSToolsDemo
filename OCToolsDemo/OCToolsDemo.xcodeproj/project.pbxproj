@@ -43,8 +43,8 @@
 		5F9C21911FE8D92600F54C88 /* ZXPurchaseProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C21901FE8D92600F54C88 /* ZXPurchaseProxy.m */; };
 		5F9C21D51FE8F71700F54C88 /* CommentHttpHandlerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C21CE1FE8F71700F54C88 /* CommentHttpHandlerImp.m */; };
 		5F9C21D61FE8F71700F54C88 /* HttpProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C21D01FE8F71700F54C88 /* HttpProxy.m */; };
-		5F9C21D71FE8F71700F54C88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C21D11FE8F71700F54C88 /* main.m */; };
 		5F9C21D81FE8F71700F54C88 /* UserHttpHandlerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C21D41FE8F71700F54C88 /* UserHttpHandlerImp.m */; };
+		5F9C22511FE9154100F54C88 /* ZWReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C22501FE9154100F54C88 /* ZWReachability.m */; };
 		5FA443261FD535E30030F1AA /* NSArray+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA443251FD535E30030F1AA /* NSArray+ZWAdd.m */; };
 		5FA443291FD53BFC0030F1AA /* NSDictionary+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA443281FD53BFC0030F1AA /* NSDictionary+ZWAdd.m */; };
 		5FA4432C1FD553600030F1AA /* NSDate+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4432B1FD553600030F1AA /* NSDate+ZWAdd.m */; };
@@ -170,10 +170,11 @@
 		5F9C21CE1FE8F71700F54C88 /* CommentHttpHandlerImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentHttpHandlerImp.m; sourceTree = "<group>"; };
 		5F9C21CF1FE8F71700F54C88 /* HttpProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpProxy.h; sourceTree = "<group>"; };
 		5F9C21D01FE8F71700F54C88 /* HttpProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpProxy.m; sourceTree = "<group>"; };
-		5F9C21D11FE8F71700F54C88 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F9C21D21FE8F71700F54C88 /* UserHttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHttpHandler.h; sourceTree = "<group>"; };
 		5F9C21D31FE8F71700F54C88 /* UserHttpHandlerImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHttpHandlerImp.h; sourceTree = "<group>"; };
 		5F9C21D41FE8F71700F54C88 /* UserHttpHandlerImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHttpHandlerImp.m; sourceTree = "<group>"; };
+		5F9C224F1FE9154100F54C88 /* ZWReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWReachability.h; sourceTree = "<group>"; };
+		5F9C22501FE9154100F54C88 /* ZWReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWReachability.m; sourceTree = "<group>"; };
 		5FA443241FD535E30030F1AA /* NSArray+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZWAdd.h"; sourceTree = "<group>"; };
 		5FA443251FD535E30030F1AA /* NSArray+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZWAdd.m"; sourceTree = "<group>"; };
 		5FA443271FD53BFC0030F1AA /* NSDictionary+ZWAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZWAdd.h"; sourceTree = "<group>"; };
@@ -491,6 +492,8 @@
 		5F78C98F1FCEB7DF00516913 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				5F9C224F1FE9154100F54C88 /* ZWReachability.h */,
+				5F9C22501FE9154100F54C88 /* ZWReachability.m */,
 				5FA91D3D1FE7A991005A18AF /* ZWWeakProxy.h */,
 				5FA91D3E1FE7A991005A18AF /* ZWWeakProxy.m */,
 				5FA91D4F1FE7B128005A18AF /* ZWAsyncLayer.h */,
@@ -543,7 +546,6 @@
 				5F9C21CE1FE8F71700F54C88 /* CommentHttpHandlerImp.m */,
 				5F9C21CF1FE8F71700F54C88 /* HttpProxy.h */,
 				5F9C21D01FE8F71700F54C88 /* HttpProxy.m */,
-				5F9C21D11FE8F71700F54C88 /* main.m */,
 				5F9C21D21FE8F71700F54C88 /* UserHttpHandler.h */,
 				5F9C21D31FE8F71700F54C88 /* UserHttpHandlerImp.h */,
 				5F9C21D41FE8F71700F54C88 /* UserHttpHandlerImp.m */,
@@ -785,11 +787,11 @@
 				5FA91D4E1FE7AF15005A18AF /* ZWTextKeyboardManager.m in Sources */,
 				5FD0FDD91FD77B9B006A6C19 /* NSBundle+ZWAdd.m in Sources */,
 				5FCF862C1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.m in Sources */,
+				5F9C22511FE9154100F54C88 /* ZWReachability.m in Sources */,
 				5FD0FDE51FD7BE2D006A6C19 /* ZWCGUtilities.m in Sources */,
 				5F43E6F41FD00B3C00C6F221 /* NSNumber+ZWAdd.m in Sources */,
 				5F9C21881FE8BD4200F54C88 /* Cat.m in Sources */,
 				5F50F31F1FD6A30B003B43EC /* NSKeyedUnarchiver+ZWAdd.m in Sources */,
-				5F9C21D71FE8F71700F54C88 /* main.m in Sources */,
 				5FA91D481FE7ABF3005A18AF /* ZWTextMagnifier.m in Sources */,
 				5F50F31C1FD6A185003B43EC /* NSNotificationCenter+ZWAdd.m in Sources */,
 				5F9C217F1FE8A7B800F54C88 /* TestViewController.m in Sources */,
