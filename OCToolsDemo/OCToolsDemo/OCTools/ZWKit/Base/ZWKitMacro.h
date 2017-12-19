@@ -62,7 +62,29 @@ ZW_EXTERN_C_BEGIN
 
 
 /**
- 快速添加类实现方式
+ 快速添加类实现方式1
+ */
+/**
+ Add this macro before each category implementation, so we don't have to use
+ -all_load or -force_load to load object files from static libraries that only
+ contain categories and no classes.
+ More info: http://developer.apple.com/library/mac/#qa/qa2006/qa1490.html .
+ Objective-C的链接器并不会为每个方法建立符号表，而是仅仅为类建立了符号表。这样的话，如果静态库中定义了已存在的一个类的分类，链接器就会以为这个类已经存在，不会把分类和核心类的代码合起来。这样的话，在最后的可执行文件中，就会缺少分类里的代码，这样函数调用就失败了。
+ 接着仔细阅读库文件的说明文档，你可能会在文档中发现诸如在Other Linker Flags中加入-ObjC或者-all_load这样的解决方法。
+ **** 使用该扩展可以不用再Other Linker Flags中设置 -ObjC或者-all_load ****
+ *******************************************************************************
+ Example:
+ ZWSYNTH_DUMMY_CLASS(NSString_ZWAdd) -> class NSString_ZWAdd
+ */
+#ifndef ZWSYNTH_CLASS
+#define ZWSYNTH_CLASS(_name_) \
+@interface _name_ : NSObject @end \
+@implementation _name_ @end
+#endif
+
+
+/**
+ 快速添加类实现方式2
  */
 /**
  Add this macro before each category implementation, so we don't have to use

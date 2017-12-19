@@ -13,6 +13,11 @@
 #import <objc/runtime.h>
 #import "UIImage+QRCode.h"
 #import "AttributeMethod.h"
+#import "TestViewController.h"
+#import "JanProxy.h"
+#import "Dog.h"
+#import "Cat.h"
+#import "ZXPurchaseProxy.h"
 
 
 ZWSYNTH_DUMMY_CLASS(Person)
@@ -279,6 +284,12 @@ ZWSYNTH_DUMMY_CLASS(Person)
 
 
 
+//ZWSYNTH_CLASS(Dog)
+
+//ZWSYNTH_CLASS(Cat)
+
+ZWSYNTH_CLASS(Teacher)
+
 @interface ViewController ()
 @property (nonatomic, assign) CGPoint myPoint;
 @end
@@ -288,6 +299,37 @@ ZWSYNTH_DUMMY_CLASS(Person)
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+    
+    
+    ZXPurchaseProxy *dealerProxy = [ZXPurchaseProxy gainProxy];
+    [dealerProxy purchaseBookWithTitle:@"Swift 100 Tips"];
+    [dealerProxy purchaseClothesWithSize:ZXClothesSizeSmall];
+    
+//    Dog *dog = [[Dog alloc]init];
+//    
+//    //OC中方法的调用本质上是给这个对象发送一个消息
+//    Cat *cat = [[Cat alloc] init];
+//    
+//    //开始复制拦截方法
+//    JanProxy *proxy = [JanProxy alloc];
+//    //开始变身成猫
+//    [proxy transformObjc:cat];
+//    //开始调猫的方法
+//    [proxy performSelector:@selector(eat:) withObject:@"猫发出消息"];
+//    
+//    //开始变身成狗
+//    [proxy transformObjc:dog];
+//    //开始调用学生的方法
+//    [proxy performSelector:@selector(shut)];
+    
+    
+//    [self.navigationController pushViewController:[TestViewController new] animated:YES];
+    
+}
+
+
+- (void)testPerform{
     [self performSelectorWithTheBlock:^(int value) {
         NSLog(@"%d",value);
     }];
