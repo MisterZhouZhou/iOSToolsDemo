@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F044B6E1FEB7C2B00B63B26 /* ZWImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F044B6D1FEB7C2B00B63B26 /* ZWImageCache.m */; };
+		5F044B711FEB7EF800B63B26 /* ZWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F044B701FEB7EF800B63B26 /* ZWCache.m */; };
+		5F044B741FEB81FB00B63B26 /* ZWMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F044B731FEB81FB00B63B26 /* ZWMemoryCache.m */; };
+		5F044B771FEB82BB00B63B26 /* ZWDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F044B761FEB82BB00B63B26 /* ZWDiskCache.m */; };
+		5F044B7A1FEB84CD00B63B26 /* ZWKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F044B791FEB84CD00B63B26 /* ZWKVStorage.m */; };
 		5F424C401FDF6D0D0006B6F5 /* ZWLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F424C3F1FDF6D0D0006B6F5 /* ZWLabel.m */; };
 		5F424C441FDF6EDC0006B6F5 /* ZWTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F424C431FDF6EDC0006B6F5 /* ZWTextAttribute.m */; };
 		5F424C471FDF71350006B6F5 /* ZWTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F424C461FDF71350006B6F5 /* ZWTextArchiver.m */; };
@@ -105,6 +110,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F044B431FEB6B0500B63B26 /* ZWDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWDefine.h; sourceTree = "<group>"; };
+		5F044B6C1FEB7C2B00B63B26 /* ZWImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWImageCache.h; sourceTree = "<group>"; };
+		5F044B6D1FEB7C2B00B63B26 /* ZWImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWImageCache.m; sourceTree = "<group>"; };
+		5F044B6F1FEB7EF800B63B26 /* ZWCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWCache.h; sourceTree = "<group>"; };
+		5F044B701FEB7EF800B63B26 /* ZWCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWCache.m; sourceTree = "<group>"; };
+		5F044B721FEB81FB00B63B26 /* ZWMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWMemoryCache.h; sourceTree = "<group>"; };
+		5F044B731FEB81FB00B63B26 /* ZWMemoryCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWMemoryCache.m; sourceTree = "<group>"; };
+		5F044B751FEB82BB00B63B26 /* ZWDiskCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWDiskCache.h; sourceTree = "<group>"; };
+		5F044B761FEB82BB00B63B26 /* ZWDiskCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWDiskCache.m; sourceTree = "<group>"; };
+		5F044B781FEB84CD00B63B26 /* ZWKVStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWKVStorage.h; sourceTree = "<group>"; };
+		5F044B791FEB84CD00B63B26 /* ZWKVStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWKVStorage.m; sourceTree = "<group>"; };
 		5F424C3E1FDF6D0D0006B6F5 /* ZWLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWLabel.h; sourceTree = "<group>"; };
 		5F424C3F1FDF6D0D0006B6F5 /* ZWLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWLabel.m; sourceTree = "<group>"; };
 		5F424C421FDF6EDC0006B6F5 /* ZWTextAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTextAttribute.h; sourceTree = "<group>"; };
@@ -309,6 +325,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F044B421FEB6AEE00B63B26 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				5F044B431FEB6B0500B63B26 /* ZWDefine.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
 		5F424C411FDF6E520006B6F5 /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,6 +508,14 @@
 		5F78C98C1FCEB7CB00516913 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				5F044B6F1FEB7EF800B63B26 /* ZWCache.h */,
+				5F044B701FEB7EF800B63B26 /* ZWCache.m */,
+				5F044B721FEB81FB00B63B26 /* ZWMemoryCache.h */,
+				5F044B731FEB81FB00B63B26 /* ZWMemoryCache.m */,
+				5F044B751FEB82BB00B63B26 /* ZWDiskCache.h */,
+				5F044B761FEB82BB00B63B26 /* ZWDiskCache.m */,
+				5F044B781FEB84CD00B63B26 /* ZWKVStorage.h */,
+				5F044B791FEB84CD00B63B26 /* ZWKVStorage.m */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -501,6 +533,8 @@
 				5FA91D381FE79DBF005A18AF /* ZWAnimatedImageView.m */,
 				5FA91D3A1FE79E82005A18AF /* ZWImageCoder.h */,
 				5FA91D3B1FE79E82005A18AF /* ZWImageCoder.m */,
+				5F044B6C1FEB7C2B00B63B26 /* ZWImageCache.h */,
+				5F044B6D1FEB7C2B00B63B26 /* ZWImageCache.m */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -639,6 +673,7 @@
 		5FE752581FCD033800F9B52E /* OCTools */ = {
 			isa = PBXGroup;
 			children = (
+				5F044B421FEB6AEE00B63B26 /* Define */,
 				5F50F2721FD63F4B003B43EC /* Resource */,
 				5F71B64A1FCFCB3400954698 /* Category */,
 				5FE752591FCD034400F9B52E /* ZWKit */,
@@ -773,6 +808,7 @@
 				5F9C217C1FE8A5ED00F54C88 /* WeakProxy.m in Sources */,
 				5F763FDC1FDA6793007DC385 /* UITextField+ZWAdd.m in Sources */,
 				5FD4BF821FBD22880020072F /* ViewController.m in Sources */,
+				5F044B711FEB7EF800B63B26 /* ZWCache.m in Sources */,
 				5F9C21821FE8B4EC00F54C88 /* JanProxy.m in Sources */,
 				5FA443261FD535E30030F1AA /* NSArray+ZWAdd.m in Sources */,
 				5FA91D511FE7B128005A18AF /* ZWAsyncLayer.m in Sources */,
@@ -799,6 +835,7 @@
 				5FADD8001FE25F6F00A97775 /* NSAttributedString+ZWText.m in Sources */,
 				5FA91D3F1FE7A991005A18AF /* ZWWeakProxy.m in Sources */,
 				A05E47931FDD0737006ED9E1 /* ZWClassInfo.m in Sources */,
+				5F044B741FEB81FB00B63B26 /* ZWMemoryCache.m in Sources */,
 				5F50F2711FD63DFD003B43EC /* UIImage+QRCode.m in Sources */,
 				5F424C471FDF71350006B6F5 /* ZWTextArchiver.m in Sources */,
 				5FCF86291FD9077600D77FCA /* UIBarButtonItem+ZWAdd.m in Sources */,
@@ -813,6 +850,7 @@
 				5F763FD61FDA651C007DC385 /* UIScrollView+ZWAdd.m in Sources */,
 				5FD4BF8D1FBD22880020072F /* main.m in Sources */,
 				5F763FE51FDA7DB2007DC385 /* UIApplication+ZWAdd.m in Sources */,
+				5F044B6E1FEB7C2B00B63B26 /* ZWImageCache.m in Sources */,
 				5F763FDF1FDA684C007DC385 /* UIScreen+ZWAdd.m in Sources */,
 				5F424C4A1FDF71770006B6F5 /* ZWTextParser.m in Sources */,
 				5FD280CB1FEA535D0075D9B3 /* ZWGestureRecognizer.m in Sources */,
@@ -844,7 +882,9 @@
 				5F50F31C1FD6A185003B43EC /* NSNotificationCenter+ZWAdd.m in Sources */,
 				5FD280DA1FEA68500075D9B3 /* ZWThreadSafeArray.m in Sources */,
 				5F9C217F1FE8A7B800F54C88 /* TestViewController.m in Sources */,
+				5F044B7A1FEB84CD00B63B26 /* ZWKVStorage.m in Sources */,
 				5F763FD91FDA6635007DC385 /* UITableView+ZWAdd.m in Sources */,
+				5F044B771FEB82BB00B63B26 /* ZWDiskCache.m in Sources */,
 				5FE752611FCD04A600F9B52E /* ThreadTestViewController.m in Sources */,
 				5FA91D5A1FE7B69B005A18AF /* ZWTransaction.m in Sources */,
 				5FD280D11FEA56460075D9B3 /* ZWKeychain.m in Sources */,

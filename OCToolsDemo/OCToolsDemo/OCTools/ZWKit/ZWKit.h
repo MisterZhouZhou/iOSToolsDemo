@@ -74,4 +74,10 @@ FOUNDATION_EXPORT const unsigned char ZWKitVersionString[];
 #import "ZWTextInput.h"
 #import "ZWTextDebugOption.h"
 
+
+//Cache
+#import "ZWCache.h"
+#import "ZWMemoryCache.h"
+#import "ZWDiskCache.h"
+
 #endif

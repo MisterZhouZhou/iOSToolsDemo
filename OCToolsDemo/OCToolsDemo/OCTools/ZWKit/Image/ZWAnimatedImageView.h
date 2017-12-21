@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface ZWAnimatedImageView : UIImageView
 
-/**
+/** 动画是否自动播放
  If the image has more than one frame, set this value to `YES` will automatically
  play/stop the animation when the view become visible/invisible.
  
@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) BOOL currentIsPlayingAnimation;
 
-/**
+/** 当前的runloop模式
  The animation timer's runloop mode, default is `NSRunLoopCommonModes`.
  
  Set this property to `NSDefaultRunLoopMode` will make the animation pause during

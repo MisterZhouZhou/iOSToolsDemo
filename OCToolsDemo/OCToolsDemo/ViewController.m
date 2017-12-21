@@ -301,6 +301,11 @@ ZWSYNTH_CLASS(Teacher)
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
+}
+
+- (void)testFrameStruct{
+     CGRect frame = (CGRect) {{10,20}, {20,20} };
 }
 
 - (void)testTimer{

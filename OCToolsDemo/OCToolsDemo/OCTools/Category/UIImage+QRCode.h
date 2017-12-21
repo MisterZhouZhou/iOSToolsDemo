@@ -17,6 +17,13 @@
 - (void)readQRCodeWithMyQRCode:(void(^)(NSString *qrString,NSError *error))myQRCode;
 
 /**
+ *  保存gif到系统相册
+ *  @param success    成功回调
+ *  @param fail       失败回调
+ */
+- (void)saveGifToSysLibraryBlock:(void(^)(void))success failBlock:(void(^)(NSError *error))fail;
+
+/**
  *  二维码生成(Erica Sadun 原生代码生成)
  *
  *  @param string   内容字符串
@@ -27,6 +34,7 @@
  *  @return 返回一张图片
  */
 + (UIImage *)qrImageWithString:(NSString *)string size:(CGSize)size color:(UIColor *)color backGroundColor:(UIColor *)backGroundColor;
+
 /**
  *  条形码生成(Third party)
  *

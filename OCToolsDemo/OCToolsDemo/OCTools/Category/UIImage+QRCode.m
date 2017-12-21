@@ -7,6 +7,8 @@
 //
 
 #import "UIImage+QRCode.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @implementation UIImage (QRCode)
 
@@ -115,6 +117,23 @@
     return [UIImage imageWithCIImage:transformedImage];
 }
 
-
+#pragma mark - 保存gif到系统相册
+- (void)saveGifToSysLibraryBlock:(void(^)(void))success failBlock:(void(^)(NSError *error))fail{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    NSDictionary *metadata = @{@"UTI":(__bridge NSString *)kUTTypeGIF};
+    NSData *gifData = UIImagePNGRepresentation(self);
+    [library writeImageDataToSavedPhotosAlbum:gifData metadata:metadata completionBlock:^(NSURL *assetURL, NSError *error) {
+        if (error) {
+            // "保存图片失败"
+            if(fail) fail(error);
+        }else{
+            //保存图片成功"
+            if(success) success();
+        }
+    }] ;
+#pragma clang diagnostic pop
+}
 
 @end
