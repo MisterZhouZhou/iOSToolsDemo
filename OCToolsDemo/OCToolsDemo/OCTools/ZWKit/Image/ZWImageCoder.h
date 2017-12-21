@@ -351,38 +351,38 @@ typedef NS_ENUM(NSUInteger, ZWImageBlendOperation) {
 #pragma mark - Helper
 
 /// Detect a data's image type by reading the data's header 16 bytes (very fast).
-CG_EXTERN ZWImageType YYImageDetectType(CFDataRef data);
+CG_EXTERN ZWImageType ZWImageDetectType(CFDataRef data);
 
 /// Convert YYImageType to UTI (such as kUTTypeJPEG).
-CG_EXTERN CFStringRef _Nullable YYImageTypeToUTType(ZWImageType type);
+CG_EXTERN CFStringRef _Nullable ZWImageTypeToUTType(ZWImageType type);
 
 /// Convert UTI (such as kUTTypeJPEG) to YYImageType.
-CG_EXTERN ZWImageType YYImageTypeFromUTType(CFStringRef uti);
+CG_EXTERN ZWImageType ZWImageTypeFromUTType(CFStringRef uti);
 
 /// Get image type's file extension (such as @"jpg").
-CG_EXTERN NSString *_Nullable YYImageTypeGetExtension(ZWImageType type);
+CG_EXTERN NSString *_Nullable ZWImageTypeGetExtension(ZWImageType type);
 
 
 
 /// Returns the shared DeviceRGB color space.
-CG_EXTERN CGColorSpaceRef YYCGColorSpaceGetDeviceRGB();
+CG_EXTERN CGColorSpaceRef ZWCGColorSpaceGetDeviceRGB();
 
 /// Returns the shared DeviceGray color space.
-CG_EXTERN CGColorSpaceRef YYCGColorSpaceGetDeviceGray();
+CG_EXTERN CGColorSpaceRef ZWCGColorSpaceGetDeviceGray();
 
 /// Returns whether a color space is DeviceRGB.
-CG_EXTERN BOOL YYCGColorSpaceIsDeviceRGB(CGColorSpaceRef space);
+CG_EXTERN BOOL ZWCGColorSpaceIsDeviceRGB(CGColorSpaceRef space);
 
 /// Returns whether a color space is DeviceGray.
-CG_EXTERN BOOL YYCGColorSpaceIsDeviceGray(CGColorSpaceRef space);
+CG_EXTERN BOOL ZWCGColorSpaceIsDeviceGray(CGColorSpaceRef space);
 
 
 
 /// Convert EXIF orientation value to UIImageOrientation.
-CG_EXTERN UIImageOrientation YYUIImageOrientationFromEXIFValue(NSInteger value);
+CG_EXTERN UIImageOrientation ZWUIImageOrientationFromEXIFValue(NSInteger value);
 
 /// Convert UIImageOrientation to EXIF orientation value.
-CG_EXTERN NSInteger YYUIImageOrientationToEXIFValue(UIImageOrientation orientation);
+CG_EXTERN NSInteger ZWUIImageOrientationToEXIFValue(UIImageOrientation orientation);
 
 
 

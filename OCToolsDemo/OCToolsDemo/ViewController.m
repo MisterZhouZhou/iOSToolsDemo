@@ -18,7 +18,8 @@
 #import "Dog.h"
 #import "Cat.h"
 #import "ZXPurchaseProxy.h"
-
+#import "UIImage+ImageEffects.h"
+#import "ZWTimer.h"
 
 ZWSYNTH_DUMMY_CLASS(Person)
 
@@ -292,6 +293,7 @@ ZWSYNTH_CLASS(Teacher)
 
 @interface ViewController ()
 @property (nonatomic, assign) CGPoint myPoint;
+@property (nonatomic, strong) ZWTimer* timer; // 使用ZWTimer的强引用
 @end
 
 @implementation ViewController
@@ -299,35 +301,60 @@ ZWSYNTH_CLASS(Teacher)
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
-    
-    
-    ZXPurchaseProxy *dealerProxy = [ZXPurchaseProxy gainProxy];
-    [dealerProxy purchaseBookWithTitle:@"Swift 100 Tips"];
-    [dealerProxy purchaseClothesWithSize:ZXClothesSizeSmall];
-    
-//    Dog *dog = [[Dog alloc]init];
-//    
-//    //OC中方法的调用本质上是给这个对象发送一个消息
-//    Cat *cat = [[Cat alloc] init];
-//    
-//    //开始复制拦截方法
-//    JanProxy *proxy = [JanProxy alloc];
-//    //开始变身成猫
-//    [proxy transformObjc:cat];
-//    //开始调猫的方法
-//    [proxy performSelector:@selector(eat:) withObject:@"猫发出消息"];
-//    
-//    //开始变身成狗
-//    [proxy transformObjc:dog];
-//    //开始调用学生的方法
-//    [proxy performSelector:@selector(shut)];
-    
-    
-//    [self.navigationController pushViewController:[TestViewController new] animated:YES];
-    
 }
 
+- (void)testTimer{
+    
+    //  ZWTimer* timer = [ZWTimer timerWithTimeInterval:1 target:self selector:@selector(log) repeats:YES];
+    //   _timer = [[ZWTimer alloc]initWithFireTime:1 interval:1 target:self selector:@selector(log) repeats:YES];
+    //   [_timer fire];
+}
+
+- (void)log{
+    NSLog(@"1");
+}
+
+- (void)testBlurImage{
+    UIScrollView *sc = [[UIScrollView alloc]initWithFrame:self.view.bounds];
+    sc.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height);
+    [self.view addSubview:sc];
+    
+    UIImageView *imgV = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+    imgV.image = [[UIImage imageNamed:@"image1.jpg"] blurImageWithRadius:5];
+    [sc addSubview:imgV];
+    
+    
+    UIImageView *imgV2 = [[UIImageView alloc]initWithFrame:CGRectMake(100, 400, 500, 500)];
+    imgV2.image = [[UIImage imageNamed:@"image1.jpg"] blurImage];
+    [sc addSubview:imgV2];
+}
+
+- (void)testProxy{
+    //    ZXPurchaseProxy *dealerProxy = [ZXPurchaseProxy gainProxy];
+    //    [dealerProxy purchaseBookWithTitle:@"Swift 100 Tips"];
+    //    [dealerProxy purchaseClothesWithSize:ZXClothesSizeSmall];
+    //
+    //    Dog *dog = [[Dog alloc]init];
+    //
+    //    //OC中方法的调用本质上是给这个对象发送一个消息
+    //    Cat *cat = [[Cat alloc] init];
+    //
+    //    //开始复制拦截方法
+    //    JanProxy *proxy = [JanProxy alloc];
+    //    //开始变身成猫
+    //    [proxy transformObjc:cat];
+    //    //开始调猫的方法
+    //    [proxy performSelector:@selector(eat:) withObject:@"猫发出消息"];
+    //
+    //    //开始变身成狗
+    //    [proxy transformObjc:dog];
+    //    //开始调用学生的方法
+    //    [proxy performSelector:@selector(shut)];
+    
+    
+    //    [self.navigationController pushViewController:[TestViewController new] animated:YES];
+    
+}
 
 - (void)testPerform{
     [self performSelectorWithTheBlock:^(int value) {

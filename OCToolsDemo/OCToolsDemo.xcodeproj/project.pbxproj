@@ -81,6 +81,15 @@
 		5FD0FDDF1FD786DA006A6C19 /* UIColor+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0FDDE1FD786DA006A6C19 /* UIColor+ZWAdd.m */; };
 		5FD0FDE21FD7B807006A6C19 /* UIImage+ZWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0FDE11FD7B807006A6C19 /* UIImage+ZWAdd.m */; };
 		5FD0FDE51FD7BE2D006A6C19 /* ZWCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0FDE41FD7BE2D006A6C19 /* ZWCGUtilities.m */; };
+		5FD280751FE9FDA80075D9B3 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FD280741FE9FDA80075D9B3 /* image1.jpg */; };
+		5FD2807C1FEA021A0075D9B3 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2807B1FEA021A0075D9B3 /* UIImage+ImageEffects.m */; };
+		5FD280CB1FEA535D0075D9B3 /* ZWGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD280CA1FEA535D0075D9B3 /* ZWGestureRecognizer.m */; };
+		5FD280CE1FEA552B0075D9B3 /* ZWFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD280CD1FEA552B0075D9B3 /* ZWFileHash.m */; };
+		5FD280D11FEA56460075D9B3 /* ZWKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD280D01FEA56460075D9B3 /* ZWKeychain.m */; };
+		5FD280D41FEA5D5A0075D9B3 /* ZWTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD280D31FEA5D5A0075D9B3 /* ZWTimer.m */; };
+		5FD280D71FEA66ED0075D9B3 /* ZWDispatchQueuePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD280D61FEA66ED0075D9B3 /* ZWDispatchQueuePool.m */; };
+		5FD280DA1FEA68500075D9B3 /* ZWThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD280D91FEA68500075D9B3 /* ZWThreadSafeArray.m */; };
+		5FD280DD1FEA694B0075D9B3 /* ZWThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD280DC1FEA694B0075D9B3 /* ZWThreadSafeDictionary.m */; };
 		5FD4BF7F1FBD22880020072F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD4BF7E1FBD22880020072F /* AppDelegate.m */; };
 		5FD4BF821FBD22880020072F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD4BF811FBD22880020072F /* ViewController.m */; };
 		5FD4BF851FBD22880020072F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD4BF831FBD22880020072F /* Main.storyboard */; };
@@ -248,6 +257,23 @@
 		5FD0FDE11FD7B807006A6C19 /* UIImage+ZWAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZWAdd.m"; sourceTree = "<group>"; };
 		5FD0FDE31FD7BE2D006A6C19 /* ZWCGUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWCGUtilities.h; sourceTree = "<group>"; };
 		5FD0FDE41FD7BE2D006A6C19 /* ZWCGUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWCGUtilities.m; sourceTree = "<group>"; };
+		5FD280741FE9FDA80075D9B3 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		5FD2807A1FEA021A0075D9B3 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		5FD2807B1FEA021A0075D9B3 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		5FD280C91FEA535D0075D9B3 /* ZWGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWGestureRecognizer.h; sourceTree = "<group>"; };
+		5FD280CA1FEA535D0075D9B3 /* ZWGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWGestureRecognizer.m; sourceTree = "<group>"; };
+		5FD280CC1FEA552B0075D9B3 /* ZWFileHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWFileHash.h; sourceTree = "<group>"; };
+		5FD280CD1FEA552B0075D9B3 /* ZWFileHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWFileHash.m; sourceTree = "<group>"; };
+		5FD280CF1FEA56460075D9B3 /* ZWKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWKeychain.h; sourceTree = "<group>"; };
+		5FD280D01FEA56460075D9B3 /* ZWKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWKeychain.m; sourceTree = "<group>"; };
+		5FD280D21FEA5D5A0075D9B3 /* ZWTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTimer.h; sourceTree = "<group>"; };
+		5FD280D31FEA5D5A0075D9B3 /* ZWTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTimer.m; sourceTree = "<group>"; };
+		5FD280D51FEA66ED0075D9B3 /* ZWDispatchQueuePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWDispatchQueuePool.h; sourceTree = "<group>"; };
+		5FD280D61FEA66ED0075D9B3 /* ZWDispatchQueuePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWDispatchQueuePool.m; sourceTree = "<group>"; };
+		5FD280D81FEA68500075D9B3 /* ZWThreadSafeArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWThreadSafeArray.h; sourceTree = "<group>"; };
+		5FD280D91FEA68500075D9B3 /* ZWThreadSafeArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWThreadSafeArray.m; sourceTree = "<group>"; };
+		5FD280DB1FEA694B0075D9B3 /* ZWThreadSafeDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWThreadSafeDictionary.h; sourceTree = "<group>"; };
+		5FD280DC1FEA694B0075D9B3 /* ZWThreadSafeDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWThreadSafeDictionary.m; sourceTree = "<group>"; };
 		5FD4BF7A1FBD22880020072F /* OCToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD4BF7D1FBD22880020072F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5FD4BF7E1FBD22880020072F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -344,6 +370,7 @@
 		5F50F2731FD63F54003B43EC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5FD280741FE9FDA80075D9B3 /* image1.jpg */,
 				5FD0FDD31FD77841006A6C19 /* yw_1222.jpg */,
 			);
 			path = images;
@@ -352,6 +379,8 @@
 		5F71B64A1FCFCB3400954698 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				5FD2807A1FEA021A0075D9B3 /* UIImage+ImageEffects.h */,
+				5FD2807B1FEA021A0075D9B3 /* UIImage+ImageEffects.m */,
 				5F71B64B1FCFCB4E00954698 /* NSObject+performSelector.h */,
 				5F71B64C1FCFCB4E00954698 /* NSObject+performSelector.m */,
 				5F50F26F1FD63DFD003B43EC /* UIImage+QRCode.h */,
@@ -494,14 +523,28 @@
 			children = (
 				5F9C224F1FE9154100F54C88 /* ZWReachability.h */,
 				5F9C22501FE9154100F54C88 /* ZWReachability.m */,
+				5FD280C91FEA535D0075D9B3 /* ZWGestureRecognizer.h */,
+				5FD280CA1FEA535D0075D9B3 /* ZWGestureRecognizer.m */,
+				5FD280CC1FEA552B0075D9B3 /* ZWFileHash.h */,
+				5FD280CD1FEA552B0075D9B3 /* ZWFileHash.m */,
+				5FD280CF1FEA56460075D9B3 /* ZWKeychain.h */,
+				5FD280D01FEA56460075D9B3 /* ZWKeychain.m */,
 				5FA91D3D1FE7A991005A18AF /* ZWWeakProxy.h */,
 				5FA91D3E1FE7A991005A18AF /* ZWWeakProxy.m */,
+				5FD280D21FEA5D5A0075D9B3 /* ZWTimer.h */,
+				5FD280D31FEA5D5A0075D9B3 /* ZWTimer.m */,
 				5FA91D4F1FE7B128005A18AF /* ZWAsyncLayer.h */,
 				5FA91D501FE7B128005A18AF /* ZWAsyncLayer.m */,
 				5FA91D521FE7B4AE005A18AF /* ZWSentinel.h */,
 				5FA91D531FE7B4AE005A18AF /* ZWSentinel.m */,
 				5FA91D581FE7B69B005A18AF /* ZWTransaction.h */,
 				5FA91D591FE7B69B005A18AF /* ZWTransaction.m */,
+				5FD280D51FEA66ED0075D9B3 /* ZWDispatchQueuePool.h */,
+				5FD280D61FEA66ED0075D9B3 /* ZWDispatchQueuePool.m */,
+				5FD280D81FEA68500075D9B3 /* ZWThreadSafeArray.h */,
+				5FD280D91FEA68500075D9B3 /* ZWThreadSafeArray.m */,
+				5FD280DB1FEA694B0075D9B3 /* ZWThreadSafeDictionary.h */,
+				5FD280DC1FEA694B0075D9B3 /* ZWThreadSafeDictionary.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -710,6 +753,7 @@
 				5FE7525E1FCD040400F9B52E /* description.txt in Resources */,
 				5FD4BF871FBD22880020072F /* Assets.xcassets in Resources */,
 				5FD4BF851FBD22880020072F /* Main.storyboard in Resources */,
+				5FD280751FE9FDA80075D9B3 /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,10 +780,12 @@
 				5FA91D571FE7B5B4005A18AF /* ZWTextView.m in Sources */,
 				5FA91D421FE7A9DD005A18AF /* ZWTextContainerView.m in Sources */,
 				5F424C4E1FDF730E0006B6F5 /* ZWTextLayout.m in Sources */,
+				5FD280CE1FEA552B0075D9B3 /* ZWFileHash.m in Sources */,
 				5FD4BF951FBD2CEF0020072F /* TextView.m in Sources */,
 				5FADD7FA1FE2590E00A97775 /* ZWTextRunDelegate.m in Sources */,
 				5FADD8091FE2840C00A97775 /* ZWTextInput.m in Sources */,
 				5FADD8031FE260C800A97775 /* NSParagraphStyle+ZWText.m in Sources */,
+				5FD280DD1FEA694B0075D9B3 /* ZWThreadSafeDictionary.m in Sources */,
 				5FA91D301FE79CA2005A18AF /* ZWImage.m in Sources */,
 				A05E478A1FDCD126006ED9E1 /* CALayer+ZWAdd.m in Sources */,
 				5FD0FDE21FD7B807006A6C19 /* UIImage+ZWAdd.m in Sources */,
@@ -769,6 +815,7 @@
 				5F763FE51FDA7DB2007DC385 /* UIApplication+ZWAdd.m in Sources */,
 				5F763FDF1FDA684C007DC385 /* UIScreen+ZWAdd.m in Sources */,
 				5F424C4A1FDF71770006B6F5 /* ZWTextParser.m in Sources */,
+				5FD280CB1FEA535D0075D9B3 /* ZWGestureRecognizer.m in Sources */,
 				5FD4BF7F1FBD22880020072F /* AppDelegate.m in Sources */,
 				5F50F3221FD6A5F9003B43EC /* NSTimer+ZWAdd.m in Sources */,
 				A05E47901FDCD62D006ED9E1 /* NSObject+ZWModel.m in Sources */,
@@ -784,6 +831,7 @@
 				5F78C9921FCEB92400516913 /* NSObject+ZWAdd.m in Sources */,
 				5FADD7FD1FE25E9900A97775 /* ZWTextRubyAnnotation.m in Sources */,
 				5F4D12121FCFB30400B39529 /* NSObject+ZWAddForKVO.m in Sources */,
+				5FD280D41FEA5D5A0075D9B3 /* ZWTimer.m in Sources */,
 				5FA91D4E1FE7AF15005A18AF /* ZWTextKeyboardManager.m in Sources */,
 				5FD0FDD91FD77B9B006A6C19 /* NSBundle+ZWAdd.m in Sources */,
 				5FCF862C1FD9089B00D77FCA /* UIGestureRecognizer+ZWAdd.m in Sources */,
@@ -794,13 +842,17 @@
 				5F50F31F1FD6A30B003B43EC /* NSKeyedUnarchiver+ZWAdd.m in Sources */,
 				5FA91D481FE7ABF3005A18AF /* ZWTextMagnifier.m in Sources */,
 				5F50F31C1FD6A185003B43EC /* NSNotificationCenter+ZWAdd.m in Sources */,
+				5FD280DA1FEA68500075D9B3 /* ZWThreadSafeArray.m in Sources */,
 				5F9C217F1FE8A7B800F54C88 /* TestViewController.m in Sources */,
 				5F763FD91FDA6635007DC385 /* UITableView+ZWAdd.m in Sources */,
 				5FE752611FCD04A600F9B52E /* ThreadTestViewController.m in Sources */,
 				5FA91D5A1FE7B69B005A18AF /* ZWTransaction.m in Sources */,
+				5FD280D11FEA56460075D9B3 /* ZWKeychain.m in Sources */,
 				5FD0FDDF1FD786DA006A6C19 /* UIColor+ZWAdd.m in Sources */,
 				5FD0FDDC1FD780EE006A6C19 /* NSThread+ZWAdd.m in Sources */,
+				5FD2807C1FEA021A0075D9B3 /* UIImage+ImageEffects.m in Sources */,
 				5F9C21D51FE8F71700F54C88 /* CommentHttpHandlerImp.m in Sources */,
+				5FD280D71FEA66ED0075D9B3 /* ZWDispatchQueuePool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

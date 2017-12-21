@@ -10,7 +10,7 @@
 #import <objc/message.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
-static ZWReachabilityStatus YYReachabilityStatusFromFlags(SCNetworkReachabilityFlags flags, BOOL allowWWAN) {
+static ZWReachabilityStatus ZWReachabilityStatusFromFlags(SCNetworkReachabilityFlags flags, BOOL allowWWAN) {
     if ((flags & kSCNetworkReachabilityFlagsReachable) == 0) {
         return ZWReachabilityStatusNone;
     }
@@ -82,5 +82,90 @@ static void ZWReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
     return self;
 }
 
+- (void)dealloc {
+    self.notifyBlock = nil;
+    self.scheduled = NO;
+    CFRelease(self.ref);
+}
+
+- (void)setScheduled:(BOOL)scheduled {
+    if (_scheduled == scheduled) return;
+    _scheduled = scheduled;
+    if (scheduled) {
+        SCNetworkReachabilityContext context = { 0, (__bridge void *)self, NULL, NULL, NULL };
+        SCNetworkReachabilitySetCallback(self.ref, ZWReachabilityCallback, &context);
+        SCNetworkReachabilitySetDispatchQueue(self.ref, [self.class sharedQueue]);
+    } else {
+        SCNetworkReachabilitySetDispatchQueue(self.ref, NULL);
+    }
+}
+
+- (SCNetworkReachabilityFlags)flags {
+    SCNetworkReachabilityFlags flags = 0;
+    SCNetworkReachabilityGetFlags(self.ref, &flags);
+    return flags;
+}
+
+- (ZWReachabilityStatus)status {
+    return ZWReachabilityStatusFromFlags(self.flags, self.allowWWAN);
+}
+
+- (ZWReachabilityWWANStatus)wwanStatus {
+    if (!self.networkInfo) return ZWReachabilityWWANStatusNone;
+    NSString *status = self.networkInfo.currentRadioAccessTechnology;
+    if (!status) return ZWReachabilityWWANStatusNone;
+    static NSDictionary *dic;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dic = @{CTRadioAccessTechnologyGPRS : @(ZWReachabilityWWANStatus2G),  // 2.5G   171Kbps
+                CTRadioAccessTechnologyEdge : @(ZWReachabilityWWANStatus2G),  // 2.75G  384Kbps
+                CTRadioAccessTechnologyWCDMA : @(ZWReachabilityWWANStatus3G), // 3G     3.6Mbps/384Kbps
+                CTRadioAccessTechnologyHSDPA : @(ZWReachabilityWWANStatus3G), // 3.5G   14.4Mbps/384Kbps
+                CTRadioAccessTechnologyHSUPA : @(ZWReachabilityWWANStatus3G), // 3.75G  14.4Mbps/5.76Mbps
+                CTRadioAccessTechnologyCDMA1x : @(ZWReachabilityWWANStatus3G), // 2.5G
+                CTRadioAccessTechnologyCDMAEVDORev0 : @(ZWReachabilityWWANStatus3G),
+                CTRadioAccessTechnologyCDMAEVDORevA : @(ZWReachabilityWWANStatus3G),
+                CTRadioAccessTechnologyCDMAEVDORevB : @(ZWReachabilityWWANStatus3G),
+                CTRadioAccessTechnologyeHRPD : @(ZWReachabilityWWANStatus3G),
+                CTRadioAccessTechnologyLTE : @(ZWReachabilityWWANStatus4G)}; // LTE:3.9G 150M/75M  LTE-Advanced:4G 300M/150M
+    });
+    NSNumber *num = dic[status];
+    if (num != nil) return num.unsignedIntegerValue;
+    else return ZWReachabilityWWANStatusNone;
+}
+
+- (BOOL)isReachable {
+    return self.status != ZWReachabilityStatusNone;
+}
+
++ (instancetype)reachability {
+    return self.new;
+}
+
++ (instancetype)reachabilityForLocalWifi {
+    struct sockaddr_in localWifiAddress;
+    bzero(&localWifiAddress, sizeof(localWifiAddress));
+    localWifiAddress.sin_len = sizeof(localWifiAddress);
+    localWifiAddress.sin_family = AF_INET;
+    localWifiAddress.sin_addr.s_addr = htonl(IN_LINKLOCALNETNUM);
+    ZWReachability *one = [self reachabilityWithAddress:(const struct sockaddr *)&localWifiAddress];
+    one.allowWWAN = NO;
+    return one;
+}
+
++ (instancetype)reachabilityWithHostname:(NSString *)hostname {
+    SCNetworkReachabilityRef ref = SCNetworkReachabilityCreateWithName(NULL, [hostname UTF8String]);
+    return [[self alloc] initWithRef:ref];
+}
+
++ (instancetype)reachabilityWithAddress:(const struct sockaddr *)hostAddress {
+    SCNetworkReachabilityRef ref = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, (const struct sockaddr *)hostAddress);
+    return [[self alloc] initWithRef:ref];
+}
+
+- (void)setNotifyBlock:(void (^)(ZWReachability *reachability))notifyBlock {
+    _notifyBlock = [notifyBlock copy];
+    self.scheduled = (self.notifyBlock != nil);
+}
 
 @end
